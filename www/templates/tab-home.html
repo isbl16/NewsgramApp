@@ -1,0 +1,66 @@
+<ion-view view-title="CoWritr">
+    <ion-nav-buttons side="left">
+        <button class="button button-clear icon ion-person" ng-click="goTo('profile')">
+            <span class="badge badge-positive icon-badge">3</span>
+        </button>        
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-ios-search" ng-click="goTo('search')">
+        </button>        
+    </ion-nav-buttons>
+  <ion-content>
+        <div class="item tabs">
+          <a id="subtab-today" class="tab-item sub-tab" ng-click="goToSubTab(0)">TODAY</a>
+          <a id="subtab-week" class="tab-item sub-tab" ng-click="goToSubTab(1)">WEEK</a>
+          <a id="subtab-month" class="tab-item sub-tab" ng-click="goToSubTab(2)">MONTH</a>
+        </div>
+      <div ng-show="subTab=='today'">
+          <ion-list>
+            <div ng-repeat="item in userPostsToday">
+                <ion-item class="item-avatar-left" >
+                    <img src="{{ item.userAvatar }}">
+                    <p>{{ item.caption }}</p>
+                     <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
+                    <h2>{{ item.location | uppercase }}</h2>
+                    <span class="badge badge-balanced avatar-badge">0</span>
+                </ion-item>
+                <div class="item item-image" ng-click="openModal(item.postId)">
+                    <img src="{{ item.photo }}">
+                </div>
+              </div>
+          </ion-list>
+      </div>
+      <div ng-show="subTab=='week'">
+          <ion-list>
+            <div ng-repeat="item in userPostsWeek">
+                <ion-item class="item-avatar-left" >
+                    <img src="{{ item.userAvatar }}">
+                    <p>{{ item.caption }}</p>
+                     <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
+                    <h2>{{ item.location | uppercase }}</h2>
+                    <span class="badge badge-balanced avatar-badge">0</span>
+                </ion-item>
+                <div class="item item-image" ng-click="openModal(item.postId)">
+                    <img src="{{ item.photo }}">
+                </div>
+              </div>
+          </ion-list>
+      </div>
+      <div ng-show="subTab=='month'">
+          <ion-list>
+            <div ng-repeat="item in userPostsMonth">
+                <ion-item class="item-avatar-left" >
+                    <img src="{{ item.userAvatar }}">
+                    <p>{{ item.caption }}</p>
+                     <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
+                    <h2>{{ item.location | uppercase }}</h2>
+                    <span class="badge badge-balanced avatar-badge">0</span>
+                </ion-item>
+                <div class="item item-image" ng-click="openModal(item.postId)">
+                    <img src="{{ item.photo }}">
+                </div>
+              </div>
+          </ion-list>
+      </div>
+  </ion-content>
+</ion-view>

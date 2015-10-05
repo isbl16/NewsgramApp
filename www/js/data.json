@@ -1,0 +1,72 @@
+[
+    {
+        "timeframe" : "today",
+        "timeframeData" : [   
+                            {
+                                "postId" : "1",
+                                "caption": "My whole garage is flooded",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800"
+                            },
+                            {
+                                "postId" : "2",
+                                "caption": "My whole garage is flooded",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800"
+                            }
+                        ]
+    },
+    {
+        "timeframe" : "week",
+        "timeframeData" : [   
+                            {
+                                "postId" : "1",
+                                "caption": "My whole garage is flooded",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800"
+                            },
+                            {
+                                "postId" : "2",
+                                "caption": "My whole garage is flooded",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800"
+                            }
+                        ]
+    },
+    {
+        "timeframe" : "month",
+        "timeframeData" : [   
+                            {
+                                "postId" : "1",
+                                "caption": "My whole garage is flooded",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800"
+                            },
+                            {
+                                "postId" : "2",
+                                "caption": "My whole garage is flooded",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800"
+                            }
+                        ]
+    }
+
+]
