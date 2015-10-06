@@ -8,7 +8,7 @@
                                 "location": "st lucia",
                                 "time": "1h",
                                 "userAvatar": "img/avatar1.png",
-                                "photo": "img/garageFlood300-180.jpg",
+                                "photo": "img/garageFlood.jpg",
                                 "fullView": "/img/garageFlood.jpg"
                             },
                             {
@@ -27,21 +27,21 @@
         "timeframeData" : [   
                             {
                                 "postId" : "3",
-                                "caption": "My whole garage is flooded",
-                                "location": "st lucia",
-                                "time": "1h",
-                                "userAvatar": "http://placehold.it/50",
-                                "photo": "http://placehold.it/300x180",
-                                "fullView": "http://placehold.it/300x800"
+                                "caption": "Boats where cars used to be..",
+                                "location": "milton",
+                                "time": "3d",
+                                "userAvatar": "img/avatar3.png",
+                                "photo": "img/miltonFlood.png",
+                                "fullView": "img/miltonFlood.png"
                             },
                             {
                                 "postId" : "4",
                                 "caption": "My whole garage is flooded",
                                 "location": "st lucia",
                                 "time": "1h",
-                                "userAvatar": "http://placehold.it/50",
-                                "photo": "http://placehold.it/300x180",
-                                "fullView": "http://placehold.it/300x800"
+                                "userAvatar": "img/avatar1.png",
+                                "photo": "img/garageFlood.jpg",
+                                "fullView": "img/garageFlood.jpg"
                             }
                         ]
     },
@@ -50,21 +50,21 @@
         "timeframeData" : [   
                             {
                                 "postId" : "5",
-                                "caption": "My whole garage is flooded",
-                                "location": "st lucia",
-                                "time": "1h",
-                                "userAvatar": "http://placehold.it/50",
-                                "photo": "http://placehold.it/300x180",
-                                "fullView": "http://placehold.it/300x800"
+                                "caption": "Police containing Gunman",
+                                "location": "brisbane city",
+                                "time": "3w",
+                                "userAvatar": "img/avatar5.png",
+                                "photo": "img/brisbanePolice.png",
+                                "fullView": "img/brisbanePolice.png"
                             },
                             {
                                 "postId" : "6",
-                                "caption": "My whole garage is flooded",
-                                "location": "st lucia",
-                                "time": "1h",
-                                "userAvatar": "http://placehold.it/50",
-                                "photo": "http://placehold.it/300x180",
-                                "fullView": "http://placehold.it/300x800"
+                                "caption": "InnerCity Gunman!",
+                                "location": "brisbane city",
+                                "time": "3w",
+                                "userAvatar": "img/avatar1.png",
+                                "photo": "img/innercityGunman.png",
+                                "fullView": "img/innercityGunman.png"
                             }
                         ]
     }
