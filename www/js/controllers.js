@@ -58,7 +58,7 @@ angular.module('starter.controllers', [])
 
 }])
 
-.controller('CameraCtrl', function($scope) {
+.controller('CameraCtrl', ['Camera', function($scope, Camera) {
       $scope.getPhoto = function() {
         Camera.getPicture().then(function(imageURI) {
             console.log(imageURI);
@@ -69,7 +69,7 @@ angular.module('starter.controllers', [])
       $scope.$on('$ionicView.enter', function(){
         $scope.getPhoto();
       });
-})
+}])
 
 .controller('ProfileCtrl', function($scope) {
 })
