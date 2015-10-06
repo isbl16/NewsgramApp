@@ -56,57 +56,19 @@ angular.module('starter.controllers', [])
         $scope.modal.remove();
       });
 
-//  $ionicModal.fromTemplateUrl('templates/imageView2.html', {
-//        scope: $scope,
-//        animation: 'slide-in-up'
-//    }).then(function(modal) {
-//        $scope.modal2 = modal;
-//    });
-//    
-//  $ionicModal.fromTemplateUrl('templates/imageView3.html', {
-//        scope: $scope,
-//        animation: 'slide-in-up'
-//    }).then(function(modal) {
-//        $scope.modal3 = modal;
-//    });
-//    
-//  $ionicModal.fromTemplateUrl('templates/imageView4.html', {
-//        scope: $scope,
-//        animation: 'slide-in-up'
-//    }).then(function(modal) {
-//        $scope.modal4 = modal;
-//    });
-//    
-//  $ionicModal.fromTemplateUrl('templates/imageView5.html', {
-//        scope: $scope,
-//        animation: 'slide-in-up'
-//    }).then(function(modal) {
-//        $scope.modal5 = modal;
-//    });
-
-//      $scope.openModal = function(index) {
-//          switch (index) {
-//              case 1:
-//                  $scope.modal1.show();
-//                  break;
-//              case 2:
-//                  $scope.modal2.show();
-//                  break;
-//              case 3:
-//                  $scope.modal3.show();
-//                  break;
-//              case 4:
-//                  $scope.modal4.show();
-//                  break;
-//              default:
-//                  $scope.modal5.show();
-//          }
-//      }
-
-
 }])
 
 .controller('CameraCtrl', function($scope) {
+      $scope.getPhoto = function() {
+        Camera.getPicture().then(function(imageURI) {
+            console.log(imageURI);
+        }, function(err) {
+            console.err(err);
+        });
+      }
+      $scope.$on('$ionicView.enter', function(){
+        $scope.getPhoto();
+      });
 })
 
 .controller('ProfileCtrl', function($scope) {

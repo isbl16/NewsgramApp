@@ -4,6 +4,8 @@
         <button class="button button-clear icon ion-close" ng-click="closeModal()"></button>
     </ion-header-bar>
     <ion-content>
-<!--        <img src="{{ userPosts[subTab].fullView }}">-->
+        <img ng-show="subTab==0" ng-src="{{ userPostsToday[0].fullView }}">
+        <img ng-show="subTab==1" ng-src="{{ userPostsWeek[0].fullView }}">
+        <img ng-show="subTab==2" ng-src="{{ userPostsMonth[0].fullView }}">
     </ion-content>
   </div>

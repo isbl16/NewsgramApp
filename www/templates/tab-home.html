@@ -14,50 +14,50 @@
           <a id="subtab-week" class="tab-item sub-tab" ng-click="goToSubTab(1)">WEEK</a>
           <a id="subtab-month" class="tab-item sub-tab" ng-click="goToSubTab(2)">MONTH</a>
         </div>
-      <div ng-show="subTab=='today'">
+      <div ng-show="subTab==0">
           <ion-list>
             <div ng-repeat="item in userPostsToday">
                 <ion-item class="item-avatar-left" >
-                    <img src="{{ item.userAvatar }}">
+                    <img ng-src="{{ item.userAvatar }}">
                     <p>{{ item.caption }}</p>
                      <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
                     <h2>{{ item.location | uppercase }}</h2>
                     <span class="badge badge-balanced avatar-badge">0</span>
                 </ion-item>
                 <div class="item item-image" ng-click="openModal(item.postId)">
-                    <img src="{{ item.photo }}">
+                    <img ng-src="{{ item.photo }}">
                 </div>
               </div>
           </ion-list>
       </div>
-      <div ng-show="subTab=='week'">
+      <div ng-show="subTab==1">
           <ion-list>
             <div ng-repeat="item in userPostsWeek">
                 <ion-item class="item-avatar-left" >
-                    <img src="{{ item.userAvatar }}">
+                    <img ng-src="{{ item.userAvatar }}">
                     <p>{{ item.caption }}</p>
                      <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
                     <h2>{{ item.location | uppercase }}</h2>
                     <span class="badge badge-balanced avatar-badge">0</span>
                 </ion-item>
                 <div class="item item-image" ng-click="openModal(item.postId)">
-                    <img src="{{ item.photo }}">
+                    <img ng-src="{{ item.photo }}">
                 </div>
               </div>
           </ion-list>
       </div>
-      <div ng-show="subTab=='month'">
+      <div ng-show="subTab==2">
           <ion-list>
             <div ng-repeat="item in userPostsMonth">
                 <ion-item class="item-avatar-left" >
-                    <img src="{{ item.userAvatar }}">
+                    <img ng-src="{{ item.userAvatar }}">
                     <p>{{ item.caption }}</p>
                      <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
                     <h2>{{ item.location | uppercase }}</h2>
                     <span class="badge badge-balanced avatar-badge">0</span>
                 </ion-item>
                 <div class="item item-image" ng-click="openModal(item.postId)">
-                    <img src="{{ item.photo }}">
+                    <img ng-src="{{ item.photo }}">
                 </div>
               </div>
           </ion-list>
