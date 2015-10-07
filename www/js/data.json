@@ -9,7 +9,7 @@
                                 "time": "1h",
                                 "userAvatar": "img/avatar1.png",
                                 "photo": "img/garageFlood.jpg",
-                                "fullView": "/img/garageFlood.jpg"
+                                "fullView": "img/garageFlood.jpg"
                             },
                             {
                                 "postId" : "2",

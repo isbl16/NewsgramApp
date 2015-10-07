@@ -58,7 +58,7 @@ angular.module('starter.controllers', [])
 
 }])
 
-.controller('CameraCtrl', ['Camera', function($scope, Camera) {
+.controller('CameraCtrl', ['$scope', 'Camera', function($scope, Camera) {
       $scope.getPhoto = function() {
         Camera.getPicture().then(function(imageURI) {
             console.log(imageURI);
