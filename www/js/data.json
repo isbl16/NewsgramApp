@@ -1,70 +1,143 @@
 [
     {
         "timeframe" : "today",
-        "timeframeData" : [   
+        "timeframeData" : [
                             {
                                 "postId" : "1",
-                                "caption": "My whole garage is flooded",
-                                "location": "st lucia",
-                                "time": "1h",
-                                "userAvatar": "img/avatar1.png",
-                                "photo": "img/garageFlood.jpg",
-                                "fullView": "img/garageFlood.jpg"
+                                "postTitle" : "Accident on Coronation Drive",
+                                "postDescription" : "If you’re heading to Indooroopilly for late night shopping tonight maybe consider an alternate route than Coro drive. A car has been T boned by a semi trailer that appears to have run a red light. The driver is still trapped in their vehicle. Fire-fighters are attempting to cut the man out with the jaws of life while Ambos wait on standby.",
+                                "postPhoto" : "img/accident.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/accident.png",
+                                "time" : "1h",
+                                "likes" : "10",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.483946",
+                                "locLng" : "152.994982",
+                                "mapMarker" : "img/accidentMrk.png"   
                             },
                             {
                                 "postId" : "2",
-                                "caption": "Todays Festival was great",
-                                "location": "west end",
-                                "time": "6h",
-                                "userAvatar": "img/avatar2.png",
-                                "photo": "img/festival.jpg",
-                                "fullView": "img/festival.jpg"
-                            }
+                                "postTitle" : "UQU Elections Week",
+                                "postDescription" : "Student elections are well and truly underway at the University of Queensland this week. Members from Thrive, Reform and Team Rocket have been relentlessly campaigning to win votes of their peers, handing out flyers and (attempting) to educate them on their policies. Results from the election will be out before the end of the semester.",
+                                "postPhoto" : "img/elections.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/elections.png",
+                                "time" : "2h",
+                                "likes" : "8",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.497073" ,
+                                "locLng" : "153.014972" ,
+                                "mapMarker" : "img/elections.png" 
+                            }      
                         ]
     },
     {
         "timeframe" : "week",
-        "timeframeData" : [   
+        "timeframeData" : [
+                            
                             {
-                                "postId" : "3",
-                                "caption": "Boats where cars used to be..",
-                                "location": "milton",
-                                "time": "3d",
-                                "userAvatar": "img/avatar3.png",
-                                "photo": "img/miltonFlood.png",
-                                "fullView": "img/miltonFlood.png"
+                                "postId" : "7",
+                                "postTitle" : "Wrath of the Bush Turkeys: Episode 2",
+                                "postDescription" : "The resident bush turkeys of the University of Queensland have launched their second attack of the week, this time causing more havoc than the last. Word on Union Drive is that it’s just a matter of time before they infiltrate the Gatton campus and wage an all out war on the grounds men.",
+                                "postPhoto" : "img/evilTurks2.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/evilTurks2.png",
+                                "time" : "2d",
+                                "likes" : "2",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.495329",
+                                "locLng" : "153.007223",
+                                "mapMarker" : "img/evilTurks2.png"      
                             },
                             {
-                                "postId" : "4",
-                                "caption": "My whole garage is flooded",
-                                "location": "st lucia",
-                                "time": "1h",
-                                "userAvatar": "img/avatar1.png",
-                                "photo": "img/garageFlood.jpg",
-                                "fullView": "img/garageFlood.jpg"
+                                "postId" : "8",
+                                "postTitle" : "Links Between Brawl and Car Crash.",
+                                "postDescription" : "Police believe a massive brawl outside an inner-Brisbane pub early Monday, in which two officers were hit, and a car crash in the city's inner-west moments later that hospitalised six people are linked. Five people aged between 18 and 24 have been charged after police were called to a brawl in Jane Street, outside the Boundary Hotel in West End, shortly after it closed at midnight on Sunday.",
+                                "postPhoto" : "img/fightClub.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/fightClub.png",
+                                "time" : "2d",
+                                "likes" : "79",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.468689",
+                                "locLng" : "153.011218",
+                                "mapMarker" : "img/fightClub.png"      
+                            },
+                            {
+                                "postId" : "5",
+                                "postTitle" : "Tom Bell now a Lion",
+                                "postDescription" : "Tom Bell is now a Brisbane Lion after Carlton agreed to the midfielder's request for a trade home to Queensland. Carlton received picks No.21 and 60 in the trade and gave pick No.41 to the Lions along with Bell. Bell, 24, enjoyed a career-best season in 2015, playing all 22 games and finishing equal fourth in the Blues' best and fairest award this year.",
+                                "postPhoto" : "img/tomBell.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/tomBell.png",
+                                "time" : "3d",
+                                "likes" : "31",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.508031",
+                                "locLng" : "153.015203",
+                                "mapMarker" : "img/tomBell.png"      
+                            },
+                            {
+                                "postId" : "3",
+                                "postTitle" : "Wrath of the Bush Turkey",
+                                "postDescription" : "UQ bush turkey strikes again. It’s been less than 24 hours since their last attack on the mulch on the university and the groundskeepers are not happy. Though it’s not known what their motive is or what exactly the turkeys are protesting about, what we do know is they won’t stop until they get what (if anything) they want.",
+                                "postPhoto" : "img/evilTurks.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/evilTurks.png",
+                                "time" : "5d",
+                                "likes" : "1",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.497853",
+                                "locLng" : "153.013804",
+                                "mapMarker" : "img/evilTurks.png"      
+                            },
+                            {
+                                "postId" : "6",
+                                "postTitle" : "SpringFlare ",
+                                "postDescription" : "Inspired by the ancient colour festival Holi, SpringFlare is all about celebrating diversity and cultivating human spirit. This unique, colour-fuelled music festival was an all ages event, bringing people together from all over Queensland to dance, listen to awesome live music and get coloured head to toe. Springflare’s 2015 line-up had something for everyone, with an impressive range of all-Aussie acts spanning psych-rock, hip-hop, indie-pop, and electronic dance.",
+                                "postPhoto" : "img/springFlare.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/springFlare.png",
+                                "time" : "1w",
+                                "likes" : "31",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.495329",
+                                "locLng" : "153.007223",
+                                "mapMarker" : "img/springFlare.png"      
+                            },
+                            {
+                                "postId" : "9",
+                                "postTitle" : "Gay night at The Loft",
+                                "postDescription" : "Brisbane has a funky new up-market chilled out gay night, every Wednesday night at The Loft, right in the heart of West End. After a soft opening last week which saw over 50 people show up despite the thunder and lightning, Equality night at The Loft is back tonight and every Wednesday night.",
+                                "postPhoto" : "img/gayParty.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/gayParty.png",
+                                "time" : "3w",
+                                "likes" : "79",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.479222",
+                                "locLng" : "153.012525",
+                                "mapMarker" : "img/gayParty.png"      
                             }
                         ]
     },
     {
         "timeframe" : "month",
-        "timeframeData" : [   
+        "timeframeData" : [
                             {
-                                "postId" : "5",
-                                "caption": "Police containing Gunman",
-                                "location": "brisbane city",
-                                "time": "3w",
-                                "userAvatar": "img/avatar5.png",
-                                "photo": "img/brisbanePolice.png",
-                                "fullView": "img/brisbanePolice.png"
-                            },
-                            {
-                                "postId" : "6",
-                                "caption": "InnerCity Gunman!",
-                                "location": "brisbane city",
-                                "time": "3w",
-                                "userAvatar": "img/avatar1.png",
-                                "photo": "img/innercityGunman.png",
-                                "fullView": "img/innercityGunman.png"
+                                "postId" : "4",
+                                "postTitle" : "Paniyiri Festival at Musgrave Park",
+                                "postDescription" : "Smells of freshly made honey puffs and souvlaki wafted through the cool autumn air and lingered there for two days.  The thirty-seventh annual Paniyiri Festival was held on May 18 to 19 in South Brisbane’s Musgrave Park. The celebration of Greek cultural traditions saw the grounds transform into a sea of people with over fifty thousand flocking to the grounds. The Queensland celebration of all things Greek hosted thirty stalls showcasing both the food and culture from all over Greece.",
+                                "postPhoto" : "img/paniyiri.png",
+                                "username" : "JohnAppleseed", 
+                                "userAvatar" : "img/paniyiri.png",
+                                "time" : "5mth",
+                                "likes" : "59",
+                                "comments" : "Oh wow!",
+                                "locLat" : "-27.478682",
+                                "locLng" : "153.016367",
+                                "mapMarker" : "img/paniyiri.png"      
                             }
                         ]
     }
