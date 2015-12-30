@@ -7,7 +7,13 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope) {
+    $rootScope.timeframe = 0;
+    $rootScope.post = 0;
+    $rootScope.userPosts = {};
+    $rootScope.currLat = 0;
+    $rootScope.currLng = 0;
+    $rootScope.indLoc = false;
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -56,7 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-search': {
           templateUrl: 'templates/tab-search.html',
-//          controller: 'SearchCtrl'
+          controller: 'MapController'
         }
       }
     })
@@ -74,7 +80,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-profile': {
           templateUrl: 'templates/tab-profile.html',
-          controller: 'ProfileCtrl'
         }
       }
     })

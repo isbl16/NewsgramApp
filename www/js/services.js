@@ -18,6 +18,26 @@ angular.module('starter.services', [])
   }
 }])
 
+.factory('sharedModal', ['$http', '$ionicModal', function ($http, $ionicModal) {
+        var userPosts = {};
+        var timeframe; //routescope
+        var post; //routescope    
+        return {
+            // Retrieve data from json file, rather than hard-coding all the details
+            getUserPosts: function() { // call once in HomeController. access userPosts in MapController
+                return $http.get('js/data.json');
+            },
+            defineModal: function(modalScope) { //call in both Home and Map controllers
+                $ionicModal.fromTemplateUrl('templates/imageView.html', {
+                    scope: modalScope,
+                    animation: 'slide-in-up'
+                }).then(function(modal) {
+                    return modal;  
+                });
+            }    
+        }
+}])
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
@@ -66,3 +86,5 @@ angular.module('starter.services', [])
     }
   };
 });
+
+

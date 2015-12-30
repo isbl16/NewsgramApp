@@ -1,5 +1,12 @@
 <ion-view view-title="Search">
   <ion-content ng-controller="MapController">
+<!--            <input style="position: absolute; margin-top: 200px; z-index: 100;">-->
+      <div class="list list-inset search-box">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Search" ng-model="search.term" ng-keydown="setInvisible($event.keyCode)">
+          </label>
+        </div>
           <div id="map" data-tap-disabled="true"></div>
   </ion-content>
 </ion-view>

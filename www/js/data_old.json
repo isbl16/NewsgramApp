@@ -1,0 +1,90 @@
+[
+    {
+        "timeframe" : "today",
+        "timeframeData" : [   
+                            {
+                                "postId" : "00",
+                                "likes" : 17,
+                                "caption": "My whole garage is flooded. likes = 17",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "img/pic2.jpg",
+                                "photo": "img/pic.jpg",
+                                "fullView": "http://placehold.it/300x800/fffff/00000",
+                                "locLat": "-27.480828",
+                                "locLng": "153.010983"
+                            },
+                            {
+                                "postId" : "01",
+                                "likes" : 27,
+                                "caption": "this is today, second post. likes = 27",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "img/pic.jpg",
+                                "photo": "img/pic2.jpg",
+                                "fullView": "http://placehold.it/300x800",
+                                "locLat": "-27.480828",
+                                "locLng": "153.010983"
+                            }
+                        ]
+    },
+    {
+        "timeframe" : "week",
+        "timeframeData" : [   
+                            {
+                                "postId" : "10",
+                                "likes" : 100,
+                                "caption": "this is week 1st post. likes = 100",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x500/000000/ffffff",
+                                "locLat": "-27.480828",
+                                "locLng": "153.010983"
+                            },
+                            {
+                                "postId" : "11",
+                                "likes" : 127,
+                                "caption": "this is week 2nd post. likes = 127",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800",
+                                "locLat": "-27.480828",
+                                "locLng": "153.010983"
+                            }
+                        ]
+    },
+    {
+        "timeframe" : "month",
+        "timeframeData" : [   
+                            {
+                                "postId" : "20",
+                                "likes" : 10,
+                                "caption": "this is month flood 1st post. likes = 10",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800/05062a/ffffff",
+                                "locLat": "-27.480828",
+                                "locLng": "153.010983"
+                            },
+                            {
+                                "postId" : "21",
+                                "likes" : 3,
+                                "caption": "this is month 2nd post. likes = 3",
+                                "location": "st lucia",
+                                "time": "1h",
+                                "userAvatar": "http://placehold.it/50",
+                                "photo": "http://placehold.it/300x180",
+                                "fullView": "http://placehold.it/300x800",
+                                "locLat": "-27.480828",
+                                "locLng": "153.010983"
+                            }
+                        ]
+    }
+
+]

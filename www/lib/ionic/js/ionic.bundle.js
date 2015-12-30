@@ -48383,7 +48383,7 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
       $timeout(function() {
         if (!self._isShown) return;
         modalEl.addClass('ng-enter-active');
-        ionic.trigger('resize');
+        //ionic.trigger('resize');
         self.scope.$parent && self.scope.$parent.$broadcast(self.viewType + '.shown', self);
         self.el.classList.add('active');
         self.scope.$broadcast('$ionicHeader.align');

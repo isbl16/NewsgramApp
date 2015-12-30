@@ -1,4 +1,4 @@
-<ion-view view-title="CoWritr">
+<ion-view view-title="Newsgram">
     <ion-nav-buttons side="left">
         <button class="button button-clear icon ion-person" ng-click="goTo('profile')">
             <span class="badge badge-positive icon-badge">3</span>
@@ -10,57 +10,89 @@
     </ion-nav-buttons>
   <ion-content>
         <div class="item tabs">
-          <a id="subtab-today" class="tab-item sub-tab" ng-click="goToSubTab(0)">TODAY</a>
-          <a id="subtab-week" class="tab-item sub-tab" ng-click="goToSubTab(1)">WEEK</a>
-          <a id="subtab-month" class="tab-item sub-tab" ng-click="goToSubTab(2)">MONTH</a>
+          <a id="subtab-today" class="tab-item sub-tab" ng-click="goToSubTab(0)">RECENT</a>
+          <a id="subtab-week" class="tab-item sub-tab" ng-click="goToSubTab(1)">POPULAR</a>                        
+            <span class="time-menu">                            
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        <i class="icon ion-chevron-down"></i>
+                    </div>
+                    <select id="select-menu" ng-model="selectedTime" ng-options="time as time.name for time in times">
+                    </select>
+                </label>
+            </span>
         </div>
       <div ng-show="subTab==0">
           <ion-list>
             <div ng-repeat="item in userPostsToday">
                 <ion-item class="item-avatar-left" >
                     <img ng-src="{{ item.userAvatar }}">
-                    <p>{{ item.caption }}</p>
-                     <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
+                    <p>{{ item.postTitle }}</p>
                     <h2>{{ item.location | uppercase }}</h2>
+                    <span class="likes-comments"><i class="icon ion-android-favorite"></i> {{ item.likes }} </span>
+                    <span class="likes-comments"><i class="icon ion-chatbubble"></i> {{ item.comments }}</span>
+                    <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
                     <span class="badge badge-balanced avatar-badge">0</span>
                 </ion-item>
                 <div class="item item-image" ng-click="openModal(item.postId)">
-                    <img ng-src="{{ item.photo }}">
+                    <img ng-src="{{ item.postPhoto }}">
                 </div>
               </div>
           </ion-list>
       </div>
-      <div ng-show="subTab==1">
+      <div ng-show="subTab==1 && selectedTime.time=='day'">
           <ion-list>
-            <div ng-repeat="item in userPostsWeek">
+            <div ng-repeat="item in userPostsToday | orderBy:'likes'">
                 <ion-item class="item-avatar-left" >
                     <img ng-src="{{ item.userAvatar }}">
-                    <p>{{ item.caption }}</p>
-                     <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
+                    <p>{{ item.postTitle }}</p>
                     <h2>{{ item.location | uppercase }}</h2>
+                    <span class="likes-comments"><i class="icon ion-android-favorite"></i> {{ item.likes }} </span>
+                    <span class="likes-comments"><i class="icon ion-chatbubble"></i> {{ item.comments }}</span>
+                    <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
                     <span class="badge badge-balanced avatar-badge">0</span>
                 </ion-item>
                 <div class="item item-image" ng-click="openModal(item.postId)">
-                    <img ng-src="{{ item.photo }}">
+                    <img ng-src="{{ item.postPhoto }}">
                 </div>
               </div>
           </ion-list>
       </div>
-      <div ng-show="subTab==2">
+      <div ng-show="subTab==1 && selectedTime.time=='week'">
           <ion-list>
-            <div ng-repeat="item in userPostsMonth">
+            <div ng-repeat="item in userPostsWeek | orderBy:'-likes'">
                 <ion-item class="item-avatar-left" >
                     <img ng-src="{{ item.userAvatar }}">
-                    <p>{{ item.caption }}</p>
-                     <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
+                    <p>{{ item.postTitle }}</p>
                     <h2>{{ item.location | uppercase }}</h2>
+                    <span class="likes-comments"><i class="icon ion-android-favorite"></i> {{ item.likes }} </span>
+                    <span class="likes-comments"><i class="icon ion-chatbubble"></i> {{ item.comments }}</span>
+                    <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
                     <span class="badge badge-balanced avatar-badge">0</span>
                 </ion-item>
                 <div class="item item-image" ng-click="openModal(item.postId)">
-                    <img ng-src="{{ item.photo }}">
+                    <img ng-src="{{ item.postPhoto }}">
                 </div>
               </div>
           </ion-list>
       </div>
+      <div ng-show="subTab==1 && selectedTime.time=='month'">
+          <ion-list>
+            <div ng-repeat="item in userPostsMonth | orderBy:'-likes'">
+                <ion-item class="item-avatar-left" >
+                    <img ng-src="{{ item.userAvatar }}">
+                    <p>{{ item.postTitle }}</p>
+                    <h2>{{ item.location | uppercase }}</h2>
+                    <span class="likes-comments"><i class="icon ion-android-favorite"></i> {{ item.likes }} </span>
+                    <span class="likes-comments"><i class="icon ion-chatbubble"></i> {{ item.comments }}</span>
+                    <span class="item-note"><i class="icon ion-android-time"></i> {{ item.time }}</span>
+                    <span class="badge badge-balanced avatar-badge">0</span>
+                </ion-item>
+                <div class="item item-image" ng-click="openModal(item.postId)">
+                    <img ng-src="{{ item.postPhoto }}">
+                </div>
+              </div>
+          </ion-list>
+      </div>      
   </ion-content>
 </ion-view>

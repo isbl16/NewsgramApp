@@ -1,11 +1,44 @@
-  <div class="modal">
+  <div class="modal" ng-controller="ImageViewCtrl">
     <ion-header-bar class="image-view-header">
-        <h1 class="title">{{ currentPost }}</h1>
+<!--        <h1 class="title">{{ timeframe }}{{ post }}</h1>-->
         <button class="button button-clear icon ion-close" ng-click="closeModal()"></button>
     </ion-header-bar>
     <ion-content>
-        <img ng-show="subTab==0" ng-src="{{ userPostsToday[0].fullView }}">
-        <img ng-show="subTab==1" ng-src="{{ userPostsWeek[0].fullView }}">
-        <img ng-show="subTab==2" ng-src="{{ userPostsMonth[0].fullView }}">
+        <div class="item item-image">
+            <img ng-src="{{ userPosts[timeframe].timeframeData[post].postPhoto }}">
+        </div>
+        <h2>     
+                <button class="button button-small button-assertive icon ion-ios-location location-btn" ng-click="goToLocation(timeframe,post); closeModal()"></button> 
+                <i class="icon ion-ios-more center-icon"></i>
+                <span class="likes-comments float-right"><i class="icon ion-android-favorite fullview-icon"></i> {{ userPosts[timeframe].timeframeData[post].likes }} </span>
+                <span class="likes-comments float-right"><i class="icon ion-chatbubble fullview-icon"></i> {{ userPosts[timeframe].timeframeData[post].comments }}</span>
+        </h2>
+        <h1 class="fullview-title padding">{{userPosts[timeframe].timeframeData[post].postTitle}}</h1>
+        <p class="fullview-description padding">{{userPosts[timeframe].timeframeData[post].postDescription}}</p>
+        <i class="icon ion-android-time padding fullview-time"> {{userPosts[timeframe].timeframeData[post].time}} ago by 
+            <a>
+               {{ userPosts[timeframe].timeframeData[post].username }}
+            </a></i>
+        <ion-item class="item-avatar-left fullview-user">
+            <img ng-src="{{ userPosts[timeframe].timeframeData[post].userAvatar }}">
+            <span class="badge badge-balanced avatar-badge">0</span>
+            <button class="button button-small button-balanced icon-left ion-android-favorite comment-like-btn">LIKE</button>
+            <button class="button button-small button-outline button-stable icon-left ion-chatbubble comment-like-btn"> {{userPosts[timeframe].timeframeData[post].comments}} COMMENTS</button>
+        </ion-item>
+        <ion-item class="item-avatar-left">
+            <img src="img/judy.jpg">
+            <span class="item-note"><i class="icon ion-android-time"></i> 1 min</span>
+            <p><b>Judytakesphotos</b></p>
+            <p>Oh wow!</p>
+        </ion-item>
+        <ion-item class="item-avatar-left">
+            <img src="img/soffes.jpg">
+            <span class="item-note"><i class="icon ion-android-time"></i> 2 min</span>
+            <p><b>soffes</b></p>
+            <p>Nice shot.</p>
+        </ion-item>
+  <label class="item item-input add-comment">
+    <input type="text" placeholder="ADD COMMENT">
+  </label>
     </ion-content>
   </div>
